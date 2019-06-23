@@ -11,5 +11,5 @@ web pages that are not in repositories.
 To generate a new ``fastStream_states.svg`` that is linked in
 ``fastStream/README.md`` running something like:
 
-```dot faststream/fastStream_states.dot -Tsvg > faststream.doc/fastStream_states.svg```
-```dot faststream/fastStream_states.dot -Tpng > faststream.doc/fastStream_states.png```
+```dot ../faststream/fastStream_states.dot -Tsvg > fastStream_states.svg```
+```dot ../faststream/fastStream_states.dot -Tpng > fastStream_states.png```
