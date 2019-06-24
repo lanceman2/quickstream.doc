@@ -8,8 +8,7 @@ deficiency in the github.com system which does not let use use files in
 web pages that are not in repositories.
 
 ## Files
-To generate a new ``fastStream_states.svg`` that is linked in
-``fastStream/README.md`` running something like:
+Files in this repo come from running *make* in the directory
+https://github.com/lanceman2/faststream/web_docs
 
-```dot ../faststream/fastStream_states.dot -Tsvg > fastStream_states.svg```
-```dot ../faststream/fastStream_states.dot -Tpng > fastStream_states.png```
+
