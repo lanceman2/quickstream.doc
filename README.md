@@ -1,5 +1,5 @@
-# faststream.doc
-documentation and other files for the faststream software project
+# quickstream.doc
+documentation and other files for the quickstream software project
 
 ## Usage
 This repo contains generated files, and so as such, should not be used as a
@@ -9,6 +9,6 @@ web pages that are not in repositories.
 
 ## Files
 Files in this repo come from running *make* in the directory
-https://github.com/lanceman2/faststream/web_docs
+https://github.com/lanceman2/quickstream/web_docs
 
 
