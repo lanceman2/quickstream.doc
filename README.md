@@ -8,7 +8,7 @@ deficiency in the github.com system which does not let use use files in
 web pages that are not in repositories.
 
 ## Files
-Files in this repo come from running *make* in the directory
-https://github.com/lanceman2/quickstream/web_docs
+Files in this repo come from running *make* from a clone of
+https://github.com/lanceman2/quickstream
 
 
