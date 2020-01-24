@@ -12,9 +12,12 @@ EOF
 
 echo "PWD=$PWD"
 
+# We may be putting most of these same files back in the next
+# command:
 git rm -rf html/
-mkdir html/
+
 cp -a "$1"/html ./
+
 echo "This is a doxygen generated directory" > html/search/README
 git add html/search html *
 if ! git commit -a -m "Adding web pages" ; then
