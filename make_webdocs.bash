@@ -17,6 +17,11 @@ mkdir html/
 cp -a "$1"/html ./
 echo "This is a doxygen generated directory" > html/search/README
 git add html/search html *
-git commit -a -m "Adding web pages"
+if ! git commit -a -m "Adding web pages" ; then
+    set +x
+    echo "The local commit failed, but it may be that no files changed"
+    echo "and so: \"nothing to commit, working tree clean\" is printed above."
+    exit
+fi
 git push origin gh-pages
 
