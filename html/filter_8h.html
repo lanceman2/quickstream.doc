@@ -78,8 +78,7 @@ Macros</h2></td></tr>
 <tr class="separator:aa4772536585d65187010606d8b47864a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81c15cea1fd154d737e12392d0a41018"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#a81c15cea1fd154d737e12392d0a41018">QS_DEFAULTMAXWRITE</a>&#160;&#160;&#160;((size_t) 1024)</td></tr>
 <tr class="separator:a81c15cea1fd154d737e12392d0a41018"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e1e98002eddb56ecccc09e702582f80"><td class="memItemLeft" align="right" valign="top"><a id="a9e1e98002eddb56ecccc09e702582f80"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>QS_DEFAULTTHRESHOLD</b>&#160;&#160;&#160;((size_t) 1)</td></tr>
+<tr class="memitem:a9e1e98002eddb56ecccc09e702582f80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#a9e1e98002eddb56ecccc09e702582f80">QS_DEFAULTTHRESHOLD</a>&#160;&#160;&#160;((size_t) 1)</td></tr>
 <tr class="separator:a9e1e98002eddb56ecccc09e702582f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -163,6 +162,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>qsCreatePassThroughBuf
 </div><div class="memdoc">
 <p>The default maximum length in bytes that may be written</p>
 <p>A filter that has output may set the maximum length in bytes that may be written for a given <a class="el" href="filter_8h.html#a566cf1e6bddc67ed6c171edd7fad1c5e">qsOutput()</a> and qsGetBuffer() calls for a given output port number. If the value of the maximum length in bytes that may be written was not set in the filter <a class="el" href="filter_8h.html#a4e2911d0ca218631678bc628ee7d446a">start()</a> function it's value will be QS_DEFAULTMAXWRITE. </p>
+
+</div>
+</div>
+<a id="a9e1e98002eddb56ecccc09e702582f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e1e98002eddb56ecccc09e702582f80">&#9670;&nbsp;</a></span>QS_DEFAULTTHRESHOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QS_DEFAULTTHRESHOLD&#160;&#160;&#160;((size_t) 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>In general the idea of threshold is related to input triggering. In the simplest case we can set a input channel threshold. </p>
 
 </div>
 </div>
