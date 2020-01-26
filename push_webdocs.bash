@@ -31,5 +31,8 @@ if ! git commit -a -m "Adding web pages" ; then
     echo "and so: \"nothing to commit, working tree clean\" is printed above."
     exit
 fi
+set +x
+echo
+set -x
 git push origin gh-pages
 
