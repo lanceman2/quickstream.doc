@@ -11,4 +11,5 @@ web pages that are not in repositories.
 Files in this repo come from running *make* from a clone of
 https://github.com/lanceman2/quickstream
 
+We did not want to put generated files in https://github.com/lanceman2/quickstream
 
