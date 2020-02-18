@@ -63,17 +63,37 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>data quickly flows between modules in a directed graph</p>
-<p>quickstream is a run library, a filter library, some filter modules, and some utility programs. quickstream is written in C and the libraries can link with C and C++ code. quickstream is for building flow stream graphs that process data in filter module stages.</p>
-<p>The <b>quickstream</b> homepage is at <a href="https://github.com/lanceman2/quickstream">https://github.com/lanceman2/quickstream</a></p>
-<h1><a class="anchor" id="program"></a>
-the quickstream runner program</h1>
-<p><a class="el" href="quickstream_program.html">The stream runner program</a></p>
-<h1><a class="anchor" id="programming_filters"></a>
-programming filter modules</h1>
-<p><a class="el" href="filter_8h.html">filter.h</a></p>
-<h1><a class="anchor" id="programming_streams"></a>
-programming stream running programs</h1>
-<p><a class="el" href="app_8h.html">app.h</a> </p>
+<h1><a class="anchor" id="intro"></a>
+What is quickstream?</h1>
+<p>quickstream is a run library with application programming interfaces (APIs), some filter plugin modules, and some utility programs. quickstream is written in C and the libraries can link with C and C++ code. quickstream is for building flow stream graphs that process data in filter module stages. quickstream is light-weight and fast.</p>
+<div class="image">
+<img src="simpleFlow.png" alt="simpleFlow.png"/>
+</div>
+<p>The <b>quickstream</b> github homepage is at <a href="https://github.com/lanceman2/quickstream">https://github.com/lanceman2/quickstream</a></p>
+<h1><a class="anchor" id="manuals"></a>
+quickstream reference manuals</h1>
+<h2><a class="anchor" id="program"></a>
+The quickstream runner program</h2>
+<dl>
+<dt><a class="el" href="quickstream_program.html">quickstream</a> </dt>
+<dd>A program that loads and connects filter plugins and runs the stream. </dd>
+</dl>
+<h2><a class="anchor" id="programming_filters"></a>
+Programming filter modules</h2>
+<dl>
+<dt><a class="el" href="filter_8h.html">filter.h</a> </dt>
+<dd>The filter module API for writing filter plugins in C. </dd>
+</dl>
+<dl>
+<dt><a class="el" href="classQsFilter.html">QsFilter</a> </dt>
+<dd>The C++ filter module API for writing filter plugins in C++. </dd>
+</dl>
+<h2><a class="anchor" id="programming_streams"></a>
+Programming stream running programs</h2>
+<dl>
+<dt><a class="el" href="app_8h.html">app.h</a> </dt>
+<dd>The C API for writing stream runner programs. </dd>
+</dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

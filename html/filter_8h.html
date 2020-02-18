@@ -70,6 +70,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>filter module writers application programming interface (API) for C.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;inttypes.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+</div>
 <p><a href="filter_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -101,18 +107,16 @@ Functions</h2></td></tr>
 <tr class="separator:a566cf1e6bddc67ed6c171edd7fad1c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d5d75c3a5b93350850b60db25b92338"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#a2d5d75c3a5b93350850b60db25b92338">qsAdvanceInput</a> (uint32_t inputPortNum, size_t len)</td></tr>
 <tr class="separator:a2d5d75c3a5b93350850b60db25b92338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabefd90107551a4a1d07316616e0925d"><td class="memItemLeft" align="right" valign="top"><a id="aabefd90107551a4a1d07316616e0925d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>qsSetInputThreshold</b> (uint32_t inputPortNum, size_t len)</td></tr>
+<tr class="memitem:aabefd90107551a4a1d07316616e0925d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#aabefd90107551a4a1d07316616e0925d">qsSetInputThreshold</a> (uint32_t inputPortNum, size_t len)</td></tr>
 <tr class="separator:aabefd90107551a4a1d07316616e0925d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6c3210a19bf7a599cb37572333d614f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#ac6c3210a19bf7a599cb37572333d614f">qsSetInputReadPromise</a> (uint32_t inputPortNum, size_t len)</td></tr>
 <tr class="separator:ac6c3210a19bf7a599cb37572333d614f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7355804b2e92c399de953a56a83e0e45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#a7355804b2e92c399de953a56a83e0e45">qsCreateOutputBuffer</a> (uint32_t outputPortNum, size_t maxWriteLen)</td></tr>
 <tr class="separator:a7355804b2e92c399de953a56a83e0e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa72227e19d177e6668a169f81188e0e8"><td class="memItemLeft" align="right" valign="top"><a id="aa72227e19d177e6668a169f81188e0e8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>qsCreatePassThroughBuffer</b> (uint32_t inPortNum, uint32_t outputPortNum, size_t maxWriteLen)</td></tr>
-<tr class="separator:aa72227e19d177e6668a169f81188e0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44d4d3fe8812850cf8094269d9b662ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#a44d4d3fe8812850cf8094269d9b662ce">qsCreatePassThroughBufferDownstream</a> (uint32_t outputPortNum, struct QsFilter *toFilter, uint32_t toInputPort)</td></tr>
-<tr class="separator:a44d4d3fe8812850cf8094269d9b662ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f00d918f0b1475dcad2a3393c20159"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#a09f00d918f0b1475dcad2a3393c20159">qsCreatePassThroughBuffer</a> (uint32_t inputPortNum, uint32_t outputPortNum, size_t maxWriteLen)</td></tr>
+<tr class="separator:a09f00d918f0b1475dcad2a3393c20159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60c38a92d45e72032603d8ab71fba3d3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#a60c38a92d45e72032603d8ab71fba3d3">qsGetFilterName</a> (void)</td></tr>
+<tr class="separator:a60c38a92d45e72032603d8ab71fba3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37bfcf72d81b5cd64908416e20489954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#a37bfcf72d81b5cd64908416e20489954">qsSetThreadSafe</a> (uint32_t maxThreads)</td></tr>
 <tr class="separator:a37bfcf72d81b5cd64908416e20489954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93c26cbfa32f4a918fd2e71b7f554586"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#a93c26cbfa32f4a918fd2e71b7f554586">qsOptsGetFloat</a> (int argc, const char **argv, const char *optName, float defaultVal)</td></tr>
@@ -127,11 +131,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>qsCreatePassThroughBuf
 <tr class="separator:a4bd9985ef097b758df7ad0ef25a1378a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a665e48d44b45d24377461a431766f5eb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#a665e48d44b45d24377461a431766f5eb">qsOptsGetUint32</a> (int argc, const char **argv, const char *optName, uint32_t defaultVal)</td></tr>
 <tr class="separator:a665e48d44b45d24377461a431766f5eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e7ca2cfc4e93079bb0f1b162485d8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filter_8h.html#a84e7ca2cfc4e93079bb0f1b162485d8a">qsRemoveDefaultFilterOptions</a> (void)</td></tr>
+<tr class="separator:a84e7ca2cfc4e93079bb0f1b162485d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The required quickstream filter interfaces that the filter module plugins may provide are: <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> and <a class="el" href="filter_8h.html#a2148bd73de9920f72c301ecae63a2ff1">help()</a>.</p>
-<p>The optional quickstream filter interfaces that the filter module plugins may provide are: <a class="el" href="filter_8h.html#ad569f377a28281f957cd92e24fab39d7">construct()</a>, <a class="el" href="filter_8h.html#aefda1a78f5542733358fc222e1343578">destroy()</a>, <a class="el" href="filter_8h.html#a4e2911d0ca218631678bc628ee7d446a">start()</a>, and <a class="el" href="filter_8h.html#a8667ef2eb53fbdab3c0a475931d33e66">stop()</a>.</p>
-<p>The libquickstream library provides utility functions that the filter module plugins may use are declared in this header file.</p>
+<div class="textblock"><p>filter module writers application programming interface (API) for C. </p>
+<p>The one required quickstream filter interface that a filter module plugin must provide is <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a>.</p>
+<p>The optional quickstream filter interfaces that a filter module plugins may provide are: <a class="el" href="filter_8h.html#ad569f377a28281f957cd92e24fab39d7">construct()</a>, <a class="el" href="filter_8h.html#aefda1a78f5542733358fc222e1343578">destroy()</a>, <a class="el" href="filter_8h.html#a4e2911d0ca218631678bc628ee7d446a">start()</a>, <a class="el" href="filter_8h.html#a8667ef2eb53fbdab3c0a475931d33e66">stop()</a>, and <a class="el" href="filter_8h.html#a2148bd73de9920f72c301ecae63a2ff1">help()</a>.</p>
+<p>The libquickstream library provides utility functions that the filter module plugins may use are declared in this header file <a class="el" href="filter_8h.html">filter.h</a></p>
 <p>Lock-less shared ring buffers are used to pass data between filter <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> (or work) functions. The size of the ring buffers depends on parameters set in both the sending and the receiving filters. These buffer parameters may optionally be set in the filter <a class="el" href="filter_8h.html#a4e2911d0ca218631678bc628ee7d446a">start()</a> functions. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa4772536585d65187010606d8b47864a"></a>
@@ -196,12 +203,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>qsCreatePassThroughBuf
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Required: print filter module help and command line argument options</p>
-<p>This function provides a brief description of what the filter does, a URL to get more information about the filter, and a list of command line argument options. The kind of thing produced from the &ndash;help command line option.</p>
+<p>print filter module help and command line argument options</p>
+<p>This function provides a brief description of what the filter does, and maybe a URL to get more information about the filter, and a list of command line argument options. The output calling this function should be the kind of thing produced from typical &ndash;help command line option.</p>
 <p>When <a class="el" href="filter_8h.html#a2148bd73de9920f72c301ecae63a2ff1">help()</a> is called additional generic text will be added to the output file that describes all quickstream filters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">file</td><td>output file to fprintf() to. </td></tr>
+    <tr><td class="paramname">file</td><td>output FILE stream that may be called with the standard C libraries fprintf() function. </td></tr>
   </table>
   </dd>
 </dl>
@@ -251,19 +258,20 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>qsCreatePassThroughBuf
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Required: filter input work function</p>
+<p>required filter input work function</p>
 <p><a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> is how the filters receive input from upstream filters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inBuffers</td><td>is a pointer to an array of the current data being passed in from an upstream filter, or 0 is this is a source filters. inBuffers is not const in case the filter uses the buffer to pass through data to a down stream filter by making the ports buffer a "pass
 through" buffer.</td></tr>
     <tr><td class="paramname">inLens</td><td>is a pointer to an array of the size of the data in the inBuffers array in bytes. inLens is 0 if this is a source feed that has no inputs.</td></tr>
-    <tr><td class="paramname">sFlushing</td><td>is a</td></tr>
+    <tr><td class="paramname">isFlushing</td><td>is a array of bools that show which input ports are being flushed from up stream. When a input port is being flushed than the input data in the buffer for that port will not be added to until the next stream flow cycle.</td></tr>
+    <tr><td class="paramname">numInPorts</td><td>is the number of input buffers in the inBuffers input array. numInPorts will be the same value for the duration of the current flow cycle.</td></tr>
+    <tr><td class="paramname">numOutPorts</td><td>is the number of output buffers that this filter is writing to. numOutPorts will be the same value for the duration of the current flow cycle.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The values returned from <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> give the filters some control over how the stream and it's flow behaves. The return value 0 is the most common return value telling the stream to continue flowing normally. Returning a any non-zero value stops that calling of <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> and sets up the final flushing of the down stream filters. A return value that is negative is an considered an "error like" case and will cause a warning to be printed to stderr. A positive return will not do that.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>figure out more return codes and what they mean </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the values returned from <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> give the filters some control over how the stream and it's flow behaves. The return value 0 is the most common return value telling the stream to continue flowing normally. Returning a any non-zero value stops the calling of <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> for the current filter and sets up the final flushing of the down stream filters this the current filter is feeding. A return value that is negative is considered an "error like" case and will cause a warning to be printed to stderr. A positive return will not do that. </dd></dl>
 
 </div>
 </div>
@@ -292,7 +300,7 @@ through" buffer.</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Optional constructor function</p>
+<p>optional constructor function</p>
 <p>This function, if present, is called only once just after the filter is loaded.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -301,8 +309,7 @@ through" buffer.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>figure out more return codes and what they mean </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, and non-zero on failure. </dd></dl>
 
 </div>
 </div>
@@ -321,10 +328,9 @@ through" buffer.</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Optional destructor function</p>
+<p>optional destructor function</p>
 <p>This function, if present, is called only once just before the filter is unloaded.</p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>figure out more return codes and what they mean </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, and non-zero on failure. </dd></dl>
 
 </div>
 </div>
@@ -353,11 +359,18 @@ through" buffer.</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Optional filter start function</p>
-<p>This function, if present, is called each time the stream starts running, just before any filter in the stream has it's <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> function called. After this is called <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> will be called in a regular fashion.</p>
-<p>This function lets that filter determine what the number of inputs and outputs will be before it has it's <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> function called. For "smarter" filters this can spawn a series of initialization interactions between the "smarter" filters in the stream.</p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>figure out more return codes and what they mean </dd></dl>
+<p>optional filter start function</p>
+<p>This function, if present, is called each time the stream starts running, just before any filter in the stream has it's <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> function called. We call this time the start of a flow cycle. After this is called <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> will be called in a regular fashion for the duration of the flow cycle.</p>
+<p>This function lets that filter determine what the number of inputs and outputs before it has it's <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> function called. For "smarter" filters this can spawn a series of initialization interactions between the "smarter" filters in the stream.</p>
+<p>The following functions may only be called in the filters <a class="el" href="filter_8h.html#a4e2911d0ca218631678bc628ee7d446a">start()</a> function: <a class="el" href="filter_8h.html#a7355804b2e92c399de953a56a83e0e45">qsCreateOutputBuffer()</a>, <a class="el" href="filter_8h.html#a09f00d918f0b1475dcad2a3393c20159">qsCreatePassThroughBuffer()</a>, <a class="el" href="filter_8h.html#aabefd90107551a4a1d07316616e0925d">qsSetInputThreshold()</a>, <a class="el" href="filter_8h.html#ac6c3210a19bf7a599cb37572333d614f">qsSetInputReadPromise()</a>, and <a class="el" href="filter_8h.html#a60c38a92d45e72032603d8ab71fba3d3">qsGetFilterName()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numInPorts</td><td>is the number of input buffers in the inBuffers input array. numInPorts will be the same value for the duration of the current flow cycle.</td></tr>
+    <tr><td class="paramname">numOutPorts</td><td>is the number of output buffers that this filter is writing to. numOutPorts will be the same value for the duration of the current flow cycle.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or non-zero on failure. </dd></dl>
 
 </div>
 </div>
@@ -388,8 +401,14 @@ through" buffer.</td></tr>
 </div><div class="memdoc">
 <p>Optional filter stop function</p>
 <p>This function, if present, is called each time the stream stops running, just after any filter in the stream has it's <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> function called for the last time in a flow/run cycle.</p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>figure out more return codes and what they mean </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numInPorts</td><td>is the number of input buffers was in inBuffers input array. numInPorts will be the same value as 173it was when the corresponding <a class="el" href="filter_8h.html#a4e2911d0ca218631678bc628ee7d446a">start()</a> and <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> was called.</td></tr>
+    <tr><td class="paramname">numOutPorts</td><td>is the number of output buffers that this filter is writing to. numOutPorts will be the same value as it was when the corresponding <a class="el" href="filter_8h.html#a4e2911d0ca218631678bc628ee7d446a">start()</a> and <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> was called.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or non-zero on failure. </dd></dl>
 
 </div>
 </div>
@@ -436,7 +455,7 @@ through" buffer.</td></tr>
   </table>
   </dd>
 </dl>
-<p>If the filter is thread-safe and maxLen equals minLen, than the ring buffer may be accessed by another thread calling qsGetBuffer(), otherwise if maxLen and minLen are not equal than another thread may not access the ring buffer until <a class="el" href="filter_8h.html#a566cf1e6bddc67ed6c171edd7fad1c5e">qsOutput()</a> is called in the corresponding thread.</p>
+<p>If the filter is thread-safe and maxLen equals minLen, than the ring buffer may be accessed by another thread calling qsGetBuffer(), otherwise if maxLen and minLen are not equal than another thread may not access the ring buffer until <a class="el" href="filter_8h.html#a566cf1e6bddc67ed6c171edd7fad1c5e">qsOutput()</a> is called in the corresponding thread. See <a class="el" href="filter_8h.html#a37bfcf72d81b5cd64908416e20489954">qsSetThreadSafe()</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the first writable byte in the buffer. The filter may write at most <em>maxLen</em> bytes to this returned pointer. </dd></dl>
 
 </div>
@@ -467,11 +486,12 @@ through" buffer.</td></tr>
       </table>
 </div><div class="memdoc">
 <p>advance data to the output buffers</p>
-<p>This stores the current buffer write offset by length len bytes.</p>
-<p>qsGetBuffer() must be called before <a class="el" href="filter_8h.html#a566cf1e6bddc67ed6c171edd7fad1c5e">qsOutput()</a>.</p>
-<p><a class="el" href="filter_8h.html#a566cf1e6bddc67ed6c171edd7fad1c5e">qsOutput()</a> must be called in a filter module <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> function in order to have output to another filter module.</p>
+<p>This set the current buffer write offset by advancing it <code>len</code> bytes.</p>
+<p><a class="el" href="filter_8h.html#a5a89b4e7dfc0eac87c480af21412d108">qsGetOutputBuffer()</a> should be called before <a class="el" href="filter_8h.html#a566cf1e6bddc67ed6c171edd7fad1c5e">qsOutput()</a>.</p>
+<p><a class="el" href="filter_8h.html#a566cf1e6bddc67ed6c171edd7fad1c5e">qsOutput()</a> must be called in a filter module <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> function in order to have output sent to another filter module.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">outputPortNum</td><td>the output port number.</td></tr>
     <tr><td class="paramname">len</td><td>length in bytes to advance the output buffer. </td></tr>
   </table>
   </dd>
@@ -504,13 +524,52 @@ through" buffer.</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Advance the current buffer input len bytes</p>
+<p>advance the current input buffer</p>
 <p><a class="el" href="filter_8h.html#a2d5d75c3a5b93350850b60db25b92338">qsAdvanceInput()</a> can only be called in a filter <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> function.</p>
-<p>In order to advance the input buffer a length that is not the length that was passed into the <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> call, this <a class="el" href="filter_8h.html#a2d5d75c3a5b93350850b60db25b92338">qsAdvanceInput()</a> function must be called in the <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> function. If <a class="el" href="filter_8h.html#a2d5d75c3a5b93350850b60db25b92338">qsAdvanceInput()</a> is not called in <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> than the input buffer will automatically be advanced the length that was passed to <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a>.</p>
+<p>In order to advance the input buffer a length that is not the length that was passed into the <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> call, this <a class="el" href="filter_8h.html#a2d5d75c3a5b93350850b60db25b92338">qsAdvanceInput()</a> function must be called in the <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> function. If <a class="el" href="filter_8h.html#a2d5d75c3a5b93350850b60db25b92338">qsAdvanceInput()</a> is not called in <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> than the input buffer will not be automatically be advanced, and an under-run error can occur is the read promise for that port is not fulfilled. See <a class="el" href="filter_8h.html#ac6c3210a19bf7a599cb37572333d614f">qsSetInputReadPromise()</a>.</p>
 <p>This has no effect on output from the current filter. This only effects the current input port number that passed to <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a>;</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lens</td><td>advance the current input buffer lens bytes. len can be less than or equal to the corresponding length in bytes that was passed to the <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> call. len greater than the input length will be clipped. </td></tr>
+    <tr><td class="paramname">inputPortNum</td><td>the input port number that corresponds with the input buffer pointer that you wish to mark as read.</td></tr>
+    <tr><td class="paramname">len</td><td>advance the current input buffer length in bytes. <code>len</code> can be less than or equal to the corresponding length in bytes that was passed to the <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> call. len greater than the input length will be clipped to the length that was passed to <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aabefd90107551a4a1d07316616e0925d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabefd90107551a4a1d07316616e0925d">&#9670;&nbsp;</a></span>qsSetInputThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void qsSetInputThreshold </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>inputPortNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>set the current filters input threshold</p>
+<p>Set the minimum input needed in order for current filters <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> function to be called. This threshold, if reached for the corresponding input port number, will cause <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> to be called. If this simple threshold condition is not adequate the filters <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> function may quickly just return 0, and effectively wait for more a complex threshold condition to be reached by continuing to just quickly return 0 until the filter sees the level of inputs that it likes.</p>
+<p><a class="el" href="filter_8h.html#aabefd90107551a4a1d07316616e0925d">qsSetInputThreshold()</a> may only be called in the filters <a class="el" href="filter_8h.html#a4e2911d0ca218631678bc628ee7d446a">start()</a> function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputPortNum</td><td>the input port number that corresponds with the input buffer pointer that you wish to set a simple threshold for.</td></tr>
+    <tr><td class="paramname">len</td><td>the length in bytes of this simple threshold. </td></tr>
   </table>
   </dd>
 </dl>
@@ -547,7 +606,7 @@ through" buffer.</td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inputPortNum</td><td>the input port number that the promise is made for.</td></tr>
-    <tr><td class="paramname">len</td><td>length in bytes.</td></tr>
+    <tr><td class="paramname">len</td><td>length in bytes that the current filter promises to read.</td></tr>
   </table>
   </dd>
 </dl>
@@ -585,7 +644,7 @@ through" buffer.</td></tr>
 <p>The total amount of memory allocated for this ring buffer depends on maxWrite, and other parameters set by other filters that may be accessing this buffer down stream.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">outputPortNum</td><td>the output port number that the filter will use to write to this buffer via qsGetBuffer() and <a class="el" href="filter_8h.html#a566cf1e6bddc67ed6c171edd7fad1c5e">qsOutput()</a>.</td></tr>
+    <tr><td class="paramname">outputPortNum</td><td>the output port number that the filter will use to write to this buffer via <a class="el" href="filter_8h.html#a5a89b4e7dfc0eac87c480af21412d108">qsGetOutputBuffer()</a> and <a class="el" href="filter_8h.html#a566cf1e6bddc67ed6c171edd7fad1c5e">qsOutput()</a>.</td></tr>
     <tr><td class="paramname">maxWriteLen</td><td>this filter promises to write at most maxWriteLen bytes to this output port. If the filter writes more than that memory may be corrupted. </td></tr>
   </table>
   </dd>
@@ -593,29 +652,29 @@ through" buffer.</td></tr>
 
 </div>
 </div>
-<a id="a44d4d3fe8812850cf8094269d9b662ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44d4d3fe8812850cf8094269d9b662ce">&#9670;&nbsp;</a></span>qsCreatePassThroughBufferDownstream()</h2>
+<a id="a09f00d918f0b1475dcad2a3393c20159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09f00d918f0b1475dcad2a3393c20159">&#9670;&nbsp;</a></span>qsCreatePassThroughBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int qsCreatePassThroughBufferDownstream </td>
+          <td class="memname">int qsCreatePassThroughBuffer </td>
           <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>inputPortNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>outputPortNum</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct QsFilter *&#160;</td>
-          <td class="paramname"><em>toFilter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>toInputPort</em>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>maxWriteLen</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -624,8 +683,40 @@ through" buffer.</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Make a downstream filter read from a pass through buffer.</p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, or -1 if there is already another downstream filter that is using this output port as a pass through buffer. </dd></dl>
+<p>create a "pass-through" buffer</p>
+<p>A pass-through buffer shared the memory mapping between the input port to an output port. The filter reading the input can write it's output to the same virtual address as the input. The input is overwritten by the output. The size of the input data must be the same as the output data, given they are the same memory. We are just changing the value in the input memory and passing it through to the output; whereby saving the need for transferring data between two separate memory buffers.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputPortNum</td><td>the input port number that will share memory with the output.</td></tr>
+    <tr><td class="paramname">outputPortNum</td><td>the output port number that will share memory with the input.</td></tr>
+    <tr><td class="paramname">maxWriteLen</td><td>is the maximum length in bytes that the calling filter promises not to exceed calling <a class="el" href="filter_8h.html#a566cf1e6bddc67ed6c171edd7fad1c5e">qsOutput()</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. If the buffer that corresponds with the output port is already passed through to this or another input to any filter this with fail and return non-zero. </dd></dl>
+
+</div>
+</div>
+<a id="a60c38a92d45e72032603d8ab71fba3d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60c38a92d45e72032603d8ab71fba3d3">&#9670;&nbsp;</a></span>qsGetFilterName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* qsGetFilterName </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the name of the filter</p>
+<p>The name of a filter is set by the person running the quickstream program. The name is unique for that loaded filter running in a given program. The name is generated automatically of can be set using the <a class="el" href="app_8h.html#a90fae34b0c4c38a95eb7e0369eb69576">qsAppFilterLoad()</a> function in a quickstream runner program.</p>
+<p><a class="el" href="filter_8h.html#a60c38a92d45e72032603d8ab71fba3d3">qsGetFilterName()</a> can only be called in a filter module in it's <a class="el" href="filter_8h.html#ad569f377a28281f957cd92e24fab39d7">construct()</a>, <a class="el" href="filter_8h.html#a4e2911d0ca218631678bc628ee7d446a">start()</a>, <a class="el" href="filter_8h.html#a8667ef2eb53fbdab3c0a475931d33e66">stop()</a>, and <a class="el" href="filter_8h.html#aefda1a78f5542733358fc222e1343578">destroy()</a> functions. <a class="el" href="filter_8h.html#a60c38a92d45e72032603d8ab71fba3d3">qsGetFilterName()</a> is not available in the filter's <a class="el" href="filter_8h.html#a2148bd73de9920f72c301ecae63a2ff1">help()</a> function. Calling <a class="el" href="filter_8h.html#a60c38a92d45e72032603d8ab71fba3d3">qsGetFilterName()</a> in the filter's <a class="el" href="filter_8h.html#a2148bd73de9920f72c301ecae63a2ff1">help()</a> makes no sense given that <a class="el" href="filter_8h.html#a2148bd73de9920f72c301ecae63a2ff1">help()</a> is not called in a stream flow time scenario when the filter's name is known.</p>
+<p>If you need the filter name in <a class="el" href="filter_8h.html#a7b0e62ec372606e82fef584edb5901b2">input()</a> get it in <a class="el" href="filter_8h.html#a4e2911d0ca218631678bc628ee7d446a">start()</a> or <a class="el" href="filter_8h.html#ad569f377a28281f957cd92e24fab39d7">construct()</a>. The filters name will never change after it's loaded.</p>
+<dl class="section return"><dt>Returns</dt><dd>a string that you should only read. </dd></dl>
 
 </div>
 </div>
@@ -960,6 +1051,30 @@ through" buffer.</td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an uint32_t last option with this name was given in the command line, or defaultVal if this option was not given. </dd></dl>
+
+</div>
+</div>
+<a id="a84e7ca2cfc4e93079bb0f1b162485d8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e7ca2cfc4e93079bb0f1b162485d8a">&#9670;&nbsp;</a></span>qsRemoveDefaultFilterOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void qsRemoveDefaultFilterOptions </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove the default command-line options for the filter.</p>
+<p>This function called in the filter module <a class="el" href="filter_8h.html#ad569f377a28281f957cd92e24fab39d7">construct()</a> function allows the filter to opt out of having the default filter command line options.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>document <a class="el" href="filter_8h.html#a84e7ca2cfc4e93079bb0f1b162485d8a">qsRemoveDefaultFilterOptions()</a></dd></dl>
+<p>The default options are: &ndash;maxWrite, &ndash;maxRead, &ndash;config FILE, &ndash;name, and ...</p>
+<p><a class="el" href="filter_8h.html#a84e7ca2cfc4e93079bb0f1b162485d8a">qsRemoveDefaultFilterOptions()</a> must be called in the filter's <a class="el" href="filter_8h.html#ad569f377a28281f957cd92e24fab39d7">construct()</a> function.</p>
+<p>The option &ndash;name is not removed. </p>
 
 </div>
 </div>
