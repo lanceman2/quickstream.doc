@@ -9,6 +9,8 @@ web pages that are not in repositories.
 
 ## Files
 Files in this repo come from running *make* from a clone of
-https://github.com/lanceman2/quickstream
+https://github.com/lanceman2/quickstream and then copy
+
+
 
 
